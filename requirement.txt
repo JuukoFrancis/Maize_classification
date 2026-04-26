@@ -1,0 +1,9 @@
+streamlit
+tensorflow
+pillow
+scikit-learn
+matplotlib
+seaborn
+requests
+gdown
+huggingface_hub
