@@ -1,0 +1,63 @@
+EfficientNetB0 - Maize Disease Classification
+TEST RESULTS
+============================================================
+Overall Accuracy  : 91.83%
+Weighted Precision: 91.83%
+Weighted Recall   : 91.83%
+Weighted F1-Score : 91.83%
+============================================================
+
+Per-Class Results:
+Class         Precision     Recall   F1-Score
+---------------------------------------------
+healthy          92.16%     93.00%     93.07%
+mlb              90.91%     90.00%     90.45%
+msv              92.42%     91.50%     91.96%
+
+
+Full Classification Report:
+              precision    recall  f1-score   support
+
+     healthy     0.9216    0.9400    0.9307       200
+         mlb     0.9091    0.9000    0.9045       200
+         msv     0.9242    0.9150    0.9196       200
+
+    accuracy                         0.9183       600
+   macro avg     0.9183    0.9183    0.9183       600
+weighted avg     0.9183    0.9183    0.9183       600
+
+
+Confusion Matrix (rows=True, cols=Predicted):
+Classes: ['healthy', 'mlb', 'msv']
+[[188   7   5]
+ [ 10 180  10]
+ [  6  11 183]]
+
+Manual Calculation Example  Class: healthy
+  TP=188, FP=16, FN=12, TN=384
+  Precision = 188/(188+16) = 0.9216
+  Recall    = 188/(188+12) = 0.9400
+  F1-Score  = 2*(0.9216*0.9400)/(0.9216+0.9400) = 0.9307
+  Accuracy  = (188+384)/(188+384+16+12) = 0.9233
+
+Sample Predictions with Confidence:
+Sample   0: True=healthy    Pred=healthy    Confidence=86.99%
+Sample   1: True=healthy    Pred=healthy    Confidence=96.21%
+Sample   2: True=healthy    Pred=healthy    Confidence=92.71%
+Sample   3: True=healthy    Pred=healthy    Confidence=90.58%
+Sample   4: True=healthy    Pred=healthy    Confidence=83.50%
+Sample   5: True=healthy    Pred=healthy    Confidence=83.50%
+Sample   6: True=healthy    Pred=healthy    Confidence=81.93%
+Sample   7: True=healthy    Pred=healthy    Confidence=94.86%
+Sample   8: True=healthy    Pred=healthy    Confidence=90.62%
+Sample   9: True=healthy    Pred=healthy    Confidence=92.33%
+Sample  10: True=healthy    Pred=healthy    Confidence=81.33%
+Sample  11: True=healthy    Pred=healthy    Confidence=96.52%
+Sample  12: True=healthy    Pred=healthy    Confidence=94.32%
+Sample  13: True=healthy    Pred=healthy    Confidence=84.40%
+Sample  14: True=healthy    Pred=healthy    Confidence=83.91%
+Sample  15: True=healthy    Pred=healthy    Confidence=83.93%
+Sample  16: True=healthy    Pred=healthy    Confidence=85.87%
+Sample  17: True=healthy    Pred=healthy    Confidence=89.40%
+Sample  18: True=healthy    Pred=healthy    Confidence=87.91%
+Sample  19: True=healthy    Pred=healthy    Confidence=85.66%

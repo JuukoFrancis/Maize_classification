@@ -1,0 +1,63 @@
+MobileNetV2 - Maize Disease Classification
+TEST RESULTS
+============================================================
+Overall Accuracy  : 88.17%
+Weighted Precision: 88.19%
+Weighted Recall   : 88.17%
+Weighted F1-Score : 88.17%
+============================================================
+
+Per-Class Results:
+Class         Precision     Recall   F1-Score
+---------------------------------------------
+healthy          90.31%     88.50%     89.39%
+mlb              86.57%     87.00%     86.78%
+msv              87.68%     89.00%     88.34%
+
+
+Full Classification Report:
+              precision    recall  f1-score   support
+
+     healthy     0.9031    0.8850    0.8939       200
+         mlb     0.8657    0.8700    0.8678       200
+         msv     0.8768    0.8900    0.8834       200
+
+    accuracy                         0.8817       600
+   macro avg     0.8819    0.8817    0.8817       600
+weighted avg     0.8819    0.8817    0.8817       600
+
+
+Confusion Matrix (rows=True, cols=Predicted):
+Classes: ['healthy', 'mlb', 'msv']
+[[177  13  10]
+ [ 11 174  15]
+ [  8  14 178]]
+
+Manual Calculation Example  Class: healthy
+  TP=177, FP=19, FN=23, TN=381
+  Precision = 177/(177+19) = 0.9031
+  Recall    = 177/(177+23) = 0.8850
+  F1-Score  = 2*(0.9031*0.8850)/(0.9031+0.8850) = 0.8939
+  Accuracy  = (177+381)/(177+381+19+23) = 0.8800
+
+Sample Predictions with Confidence:
+Sample 0: Pred=healthy, Confidence=78.21%
+Sample 1: Pred=healthy, Confidence=79.30%
+Sample 2: Pred=healthy, Confidence=85.06%
+Sample 3: Pred=healthy, Confidence=86.64%
+Sample 4: Pred=healthy, Confidence=88.80%
+Sample 5: Pred=healthy, Confidence=83.25%
+Sample 6: Pred=healthy, Confidence=90.51%
+Sample 7: Pred=healthy, Confidence=93.48%
+Sample 8: Pred=healthy, Confidence=92.04%
+Sample 9: Pred=healthy, Confidence=78.71%
+Sample 10: Pred=healthy, Confidence=86.65%
+Sample 11: Pred=healthy, Confidence=79.89%
+Sample 12: Pred=healthy, Confidence=82.36%
+Sample 13: Pred=healthy, Confidence=95.76%
+Sample 14: Pred=healthy, Confidence=80.56%
+Sample 15: Pred=healthy, Confidence=86.98%
+Sample 16: Pred=healthy, Confidence=89.13%
+Sample 17: Pred=healthy, Confidence=90.64%
+Sample 18: Pred=healthy, Confidence=88.07%
+Sample 19: Pred=healthy, Confidence=78.18%

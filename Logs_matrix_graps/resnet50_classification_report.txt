@@ -1,0 +1,41 @@
+ResNet50 - Maize Disease Classification
+TEST RESULTS (89.9% ACCURACY)
+============================================================
+Overall Accuracy  : 89.83%
+Weighted Precision: 89.84%
+Weighted Recall   : 89.83%
+Weighted F1-Score : 89.84%
+============================================================
+
+Per-Class Results:
+Class         Precision     Recall   F1-Score
+---------------------------------------------
+healthy          90.91%     90.00%     90.45%
+mlb              88.61%     89.50%     89.05%
+msv              90.00%     90.00%     90.00%
+
+
+Full Classification Report:
+              precision    recall  f1-score   support
+
+     healthy     0.9091    0.9000    0.9045       200
+         mlb     0.8861    0.8950    0.8905       200
+         msv     0.9000    0.9000    0.9000       200
+
+    accuracy                         0.8983       600
+   macro avg     0.8984    0.8983    0.8984       600
+weighted avg     0.8984    0.8983    0.8984       600
+
+
+Confusion Matrix (rows=True, cols=Predicted):
+Classes: ['healthy', 'mlb', 'msv']
+[[180  11   9]
+ [ 10 179  11]
+ [  8  12 180]]
+
+Manual Calculation Example � Class: healthy
+  TP=180, FP=18, FN=20, TN=382
+  Precision = 180/(180+18) = 0.9091
+  Recall    = 180/(180+20) = 0.9000
+  F1-Score  = 2*(0.9091*0.9000)/(0.9091+0.9000) = 0.9045
+  Accuracy  = (180+382)/(180+382+18+20) = 0.9094
